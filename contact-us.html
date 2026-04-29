@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Sistema de Encuestas</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contactos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="survey.html">Ir a la Encuesta</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Formulario de Contacto</h2>
+                <form action="#">
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </p>
+
+                    <p>¿Eres estudiante de CESDE?</p>
+                    <label>
+                        <input type="radio" name="estudiante" value="si"> Sí
+                    </label>
+                    <label>
+                        <input type="radio" name="estudiante" value="no"> No
+                    </label>
+
+                    <p>Temas de interés:</p>
+                    <label>
+                        <input type="checkbox" name="interes" value="web"> Desarrollo Web
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interes" value="movil"> Apps Móviles
+                    </label>
+
+                    <p>
+                        <label for="pais">País:</label>
+                        <select id="pais" name="pais">
+                            <option value="co">Colombia</option>
+                            <option value="mx">México</option>
+                            <option value="ar">Argentina</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje o sugerencia:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                    </p>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Howar Alexander Agudelo Castro</li>
+            <li>2026</li>
+            <li>Introducción a la Programación</li>
+        </ul>
+        <p>“Proyecto académico sin frameworks - 2026 Momento 2”</p>
+    
+</body>
+</html>
